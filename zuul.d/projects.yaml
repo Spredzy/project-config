@@ -389,8 +389,8 @@
 - project:
     name: github.com/ansible/awx
     default-branch: devel
-    check:
-      jobs: []
+    templates:
+      - ansible-awx-jobs
 
 - project:
     name: github.com/ansible/network

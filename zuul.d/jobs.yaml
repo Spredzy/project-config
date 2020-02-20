@@ -170,3 +170,13 @@
       - secret: galaxy_dev_secret
         name: ansible_galaxy_info
     nodeset: centos-8-1vcpu
+
+- job:
+    name: ansible-awx-tests
+    pre-run: playbooks/ansible-awx/pre.yaml
+    run: playbooks/ansible-awx/run.yaml
+    nodeset: centos-7-1vcpu
+    abstract: true
+    secrets:
+      - secret: ansible-awx-k8s-credentials
+        name: ansible_awx_k8s-credentials
