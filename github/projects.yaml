@@ -124,3 +124,5 @@
   description: Ansible collection for network devices
 - project: ansible/workshops
   description: Training Course for Ansible Automation Platform
+- project: ansible/awx
+  description: AWX Project
